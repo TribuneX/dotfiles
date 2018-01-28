@@ -13,7 +13,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 
 ###############################################################################
-# Keyboard
+# Keyboard                                                                    #
 ###############################################################################
 
 defaults write NSGlobalDomain KeyRepeat -int 3
@@ -21,7 +21,7 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 12
 
 
 ###############################################################################
-# Apple software: Safari, Updater, iTunes, etc.                               
+# Apple software: Safari, Updater, iTunes, etc.                               #
 ###############################################################################
 
 # Disable inline attachments in Mail.app (just show the icons)
@@ -57,7 +57,7 @@ defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 
 
 ###############################################################################
-# Screen
+# Screen                                                                      #
 ###############################################################################
 
 # Require password immediately after sleep or screen saver.
@@ -74,8 +74,9 @@ defaults write com.apple.screencapture disable-shadow -bool true
 # the files through Finder. Makes things look pretty.
 defaults write com.apple.finder CreateDesktop -bool false && killall Finder
 
+
 ###############################################################################
-# Finder
+# Finder                                                                      #
 ###############################################################################
 
 # Show the ~/Library folder.
@@ -109,7 +110,7 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
 
 ###############################################################################
-# Dock
+# Dock                                                                        #
 ###############################################################################
 
 # Show indicator lights for open applications in the Dock
@@ -136,7 +137,6 @@ defaults write com.apple.dock autohide-time-modifier -float 0
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
 
-
 # Hot corners
 # Possible values:
 #  0: no-op
@@ -157,38 +157,15 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 defaults write com.apple.dock wvous-br-corner -int 5
 defaults write com.apple.dock wvous-br-modifier -int 0
 
+
 ###############################################################################
-# Trackpad
+# Trackpad                                                                    #
 ###############################################################################
 
 # Trackpad: enable tap to click for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-
-###############################################################################
-# Homebrew
-###############################################################################
-
-# Make sure we’re using the latest Homebrew.
-brew update
-
-# Upgrade any already-installed formulae.
-brew upgrade
-
-brew install nano
-brew install vim --override-system-vi
-brew install httpie
-brew install git
-brew install grep
-brew install openssh
-
-###############################################################################
-# Tools
-###############################################################################
-
-# Automatically change macOS Network locations based on WiFi network
-curl -L https://github.com/eprev/locationchanger/raw/master/locationchanger.sh | bash
 
 
 ###############################################################################
