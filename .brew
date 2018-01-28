@@ -1,0 +1,17 @@
+###############################################################################
+# Homebrew                                                                    #
+###############################################################################
+
+# Make sure we’re using the latest Homebrew.
+brew update
+
+# Upgrade any already-installed formulae.
+brew upgrade
+
+brew install nano
+brew install vim --override-system-vi
+brew install httpie
+brew install git
+brew install grep
+brew install openssh
+
