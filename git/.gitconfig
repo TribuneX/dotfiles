@@ -1,0 +1,8 @@
+[user]
+	name = Sascha
+	useConfigOnly = true
+
+[core]
+	autocrlf = input
+	excludesfile = ~/dotfiles/git/.gitignore
+	editor = vim
