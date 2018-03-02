@@ -16,7 +16,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Keyboard                                                                    #
 ###############################################################################
 
-defaults write NSGlobalDomain KeyRepeat -int 3
+defaults write NSGlobalDomain KeyRepeat -int 2
 defaults write NSGlobalDomain InitialKeyRepeat -int 12
 
 
@@ -119,8 +119,8 @@ defaults write com.apple.dock show-process-indicators -bool true
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
 
-# Set the icon size of Dock items to 36 pixels
-defaults write com.apple.dock tilesize -int 36
+# Set the icon size of Dock items
+defaults write com.apple.dock tilesize -int 50
 
 # Change minimize/maximize window effect
 defaults write com.apple.dock mineffect -string "scale"
