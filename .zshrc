@@ -103,3 +103,6 @@ source $ZSH/oh-my-zsh.sh
 
 # added by travis gem
 [ -f /Users/sbleidner/.travis/travis.sh ] && source /Users/sbleidner/.travis/travis.sh
+
+# added by autojump
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
