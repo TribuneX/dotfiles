@@ -1,0 +1,12 @@
+{
+    "git.autofetch": true,
+    "sublimeTextKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "editor.formatOnPaste": true,
+    "workbench.colorTheme": "One Dark Pro",
+    "files.autoSave": "afterDelay",
+    "workbench.iconTheme": "file-icons",
+    "git.confirmSync": false,
+    "editor.fontSize": 15
+}
