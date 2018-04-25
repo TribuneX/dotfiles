@@ -6,7 +6,10 @@
     "editor.formatOnPaste": true,
     "workbench.colorTheme": "One Dark Pro",
     "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 3000,
     "workbench.iconTheme": "file-icons",
     "git.confirmSync": false,
-    "editor.fontSize": 15
+    "editor.fontSize": 15,
+    "vsnotes.defaultNotePath": "/Users/sbleidner/git/notes/files",
+
 }

@@ -14,5 +14,7 @@ brew install httpie
 brew install git
 brew install grep
 brew install openssh
-brew install autojump
+brew install fish
+brew tap fisherman/tap
+brew install fisherman
 
