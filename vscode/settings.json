@@ -10,6 +10,13 @@
     "workbench.iconTheme": "file-icons",
     "git.confirmSync": false,
     "editor.fontSize": 15,
-    "vsnotes.defaultNotePath": "/Users/sbleidner/git/notes/files",
+    "cSpell.language": ",de",
+    "spellright.language": "",
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ],
+    "explorer.confirmDelete": false,
 
 }
