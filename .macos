@@ -150,13 +150,16 @@ defaults write com.apple.dock autohide -bool true
 # 11: Launchpad
 # 12: Notification Center
 
-# Bottom left screen corner → Desktop
+# Bottom left screen corner → Put display to sleep
 defaults write com.apple.dock wvous-bl-corner -int 10
 defaults write com.apple.dock wvous-bl-modifier -int 0
+
 # Bottom right screen corner → Start screen saver
 defaults write com.apple.dock wvous-br-corner -int 5
 defaults write com.apple.dock wvous-br-modifier -int 0
 
+# Adds an empty dock icon as a divider
+defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="small-spacer-tile";}'; killall Dockdefaults write com.apple.dock persistent-apps -array-add '{"tile-type"="small-spacer-tile";}'; killall Dock
 
 ###############################################################################
 # Trackpad                                                                    #
