@@ -8,6 +8,7 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade
 
+# Commandline tools
 brew install nano
 brew install vim --override-system-vi
 brew install httpie
@@ -18,3 +19,20 @@ brew install fish
 brew tap fisherman/tap
 brew install fisherman
 
+# Apps
+brew cask install etcher
+brew cask install google-drive-file-stream 
+brew cask install spotify
+brew cask install etcher
+brew cask install alfred
+brew cask install caffeine
+brew cask install 1password
+brew cask install forklift
+brew cask install moneymoney
+brew cask install popclip
+brew cask install bartender
+brew cask install visual-studio-code
+brew cask install google-chrome
+brew cask install docker
+brew cask install resilio-sync
+brew cask install java
