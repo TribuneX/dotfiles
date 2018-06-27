@@ -16,9 +16,8 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Keyboard                                                                    #
 ###############################################################################
 
-defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write NSGlobalDomain KeyRepeat -int 2
 defaults write NSGlobalDomain InitialKeyRepeat -int 12
-
 
 ###############################################################################
 # Apple software: Safari, Updater, iTunes, etc.                               #
@@ -169,6 +168,9 @@ defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="small-sp
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+
+# Magic Mouse
+defaults write -g com.apple.mouse.scaling  7.0
 
 
 ###############################################################################
