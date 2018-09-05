@@ -16,6 +16,7 @@ brew install git
 brew install grep
 brew install openssh
 brew install fish
+brew install bat
 brew tap fisherman/tap
 brew install fisherman
 brew tap buo/cask-upgrade
@@ -38,3 +39,5 @@ brew cask install docker
 brew cask install resilio-sync
 brew cask install java
 brew cask install fork
+brew cask install hazel
+brew cask install atext
