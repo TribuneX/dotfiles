@@ -41,3 +41,4 @@ brew cask install java
 brew cask install fork
 brew cask install hazel
 brew cask install atext
+brew cask install virtualbox
