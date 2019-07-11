@@ -41,10 +41,12 @@ end
 
 # Java developement
 
-alias j10="jhome  -v 10"
-alias j8="jhome -v 1.8.0_152"
-alias j9="jhome  -v 9.0.4"
-alias j7="jhome -v 1.7.0_181"
+alias j11="jhome 11.0.3"
+alias j8="jhome -v 1.8.0_212"
+alias j7="jhome -v 1.7.0_222"
+
+# Openshift
+alias oadm="oc adm"
 
 function jhome
     set -g -x JAVA_HOME (/usr/libexec/java_home $argv)

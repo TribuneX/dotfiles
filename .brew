@@ -21,6 +21,11 @@ brew tap fisherman/tap
 brew install fisherman
 brew tap buo/cask-upgrade
 
+# Java
+brew tap AdoptOpenJDK/openjdk
+brew cask install adoptopenjdk8
+brew cask install adoptopenjdk11
+
 # Apps
 brew cask install etcher
 brew cask install google-drive-file-stream 
