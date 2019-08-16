@@ -4,14 +4,16 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
     "editor.formatOnPaste": true,
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.colorTheme": "Atom One Dark",
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 3000,
     "workbench.iconTheme": "file-icons",
     "git.confirmSync": false,
-    "editor.fontSize": 15,
+    "editor.fontSize": 18,
     "cSpell.language": ",de",
     "spellright.language": "",
+    // Xcode's San Francisco Mono font. See below.
+    "editor.fontFamily": "'SF Mono', Menlo, Monaco, 'Courier New', monospace",
     "spellright.documentTypes": [
         "markdown",
         "latex",
@@ -19,6 +21,26 @@
     ],
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-    "yaml.customTags": ["!secret", "!include_dir_merge_list", "!include_dir_named"]
-
+    "yaml.customTags": [
+        "!secret",
+        "!include_dir_merge_list",
+        "!include_dir_named"
+    ],
+    "window.zoomLevel": 0,
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    "git.allowForcePush": true,
+    "git.confirmForcePush": false,
+    "languageTool.language": "en, de",
+    "cSpell.userWords": [
+        "unsinnigkeiten"
+    ],
+    "vs-kubernetes": {
+        "vs-kubernetes.minikube-path": "/Users/sbleidner/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "vscode-home-assistant.hostUrl": "https://hass.cbs-service.net:8123",
+    "vscode-home-assistant.longLivedAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI0ZjI1NmIzMTdlODI0NGY4YThkZDk3OTcwMjQ2MGRlNiIsImlhdCI6MTU1MzQ2MjU1OCwiZXhwIjoxODY4ODIyNTU4fQ.YXV_dOI19wbtIeMdE6QHpOKyE8g3-MydFqkuyLx9dYA"
 }
