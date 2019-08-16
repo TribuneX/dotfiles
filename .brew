@@ -26,9 +26,14 @@ brew tap AdoptOpenJDK/openjdk
 brew cask install adoptopenjdk8
 brew cask install adoptopenjdk11
 
+# Development
+brew install cfn-lint
+brew install awscli
+brew tap Mr-Lizard/homebrew-tap
+brew install cfn-nag
+
 # Apps
 brew cask install etcher
-brew cask install google-drive-file-stream 
 brew cask install spotify
 brew cask install etcher
 brew cask install alfred
@@ -39,7 +44,7 @@ brew cask install moneymoney
 brew cask install popclip
 brew cask install bartender
 brew cask install visual-studio-code
-brew cask install google-chrome
+brew cask install firefox
 brew cask install docker
 brew cask install resilio-sync
 brew cask install java
