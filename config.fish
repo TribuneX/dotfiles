@@ -43,10 +43,13 @@ end
 
 alias j11="jhome 11.0.3"
 alias j8="jhome -v 1.8.0_212"
-alias j7="jhome -v 1.7.0_222"
+alias j7="jhome -v 1.7.0.232"
 
 # Openshift
 alias oadm="oc adm"
+
+# DB
+alias proxy="cntlm -f -c ~/.cntlm.conf"
 
 function jhome
     set -g -x JAVA_HOME (/usr/libexec/java_home $argv)
