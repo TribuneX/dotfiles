@@ -172,6 +172,11 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 # Magic Mouse
 defaults write -g com.apple.mouse.scaling  7.0
 
+# Enable TouchID for sudo:
+echo 'auth       sufficient     pam_tid.so' > /tmp/sudo_temp 
+cat /etc/pam.d/sudo >> /tmp/sudo_temp
+sudo mv /tmp/sudo_temp /etc/pam.d/sudo
+
 
 ###############################################################################
 # Do some clean up work.
