@@ -42,21 +42,40 @@ end
 # Java developement
 
 alias j11="jhome 11.0.3"
-alias j8="jhome -v 1.8.0_212"
+alias j8="jhome -v 1.8.0_222"
 alias j7="jhome -v 1.7.0.232"
 
 # Openshift
 alias oadm="oc adm"
 
 # DB
-alias proxy="cntlm -f -c ~/.cntlm.conf"
+alias proxy="bash ~/dotfiles/scripts/startProxy.sh"
+set SCRIPTS $IDE_WORKSPACE/dev-backend/scripts
+set PATH $SCRIPTS/local $PATH
+set PATH $SCRIPTS/docker $PATH
+
+
+
+function startfor
+        bash $SCRIPTS/docker/start-for-{$argv[1]}-service.sh
+end
+
+function stopfor
+        bash $SCRIPTS/docker/stop-for-{$argv[1]}-service.sh
+end
+
+function testfor
+        bash $SCRIPTS/local/it-{$argv[1]}.sh
+end
 
 function jhome
     set -g -x JAVA_HOME (/usr/libexec/java_home $argv)
-    echo "JAVA_HOME:" $JAVA_HOME
-    echo "java -version:"
-    java -version
+    #echo "JAVA_HOME:" $JAVA_HOME
+    #echo "java -version:"
+    #java -version
 end
 
 funcsave jhome
 
+# Set java 8 as default
+j8
