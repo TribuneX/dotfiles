@@ -26,16 +26,9 @@ brew tap AdoptOpenJDK/openjdk
 brew cask install adoptopenjdk8
 brew cask install adoptopenjdk11
 
-# Development
-brew install cfn-lint
-brew install awscli
-brew tap Mr-Lizard/homebrew-tap
-brew install cfn-nag
-
 # Apps
 brew cask install etcher
 brew cask install spotify
-brew cask install etcher
 brew cask install alfred
 brew cask install caffeine
 brew cask install 1password
@@ -52,3 +45,5 @@ brew cask install fork
 brew cask install hazel
 brew cask install atext
 brew cask install virtualbox
+brew cask install notion
+brew cask install telegram
