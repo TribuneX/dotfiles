@@ -22,16 +22,20 @@ setopt hist_expire_dups_first
 setopt hist_ignore_space
 setopt hist_verify
 
+
+# Use zplugin
 source ~/.zplugin/bin/zplugin.zsh
+
 # Load OMZ Git library
+zplugin ice wait lucid
 zplugin snippet OMZ::lib/git.zsh
 
 # Load Git plugin from OMZ
+zplugin ice wait atload"unalias grv" lucid
 zplugin snippet OMZ::plugins/git/git.plugin.zsh
 zplugin snippet OMZ::plugins/autojump/autojump.plugin.zsh
+zplugin load zsh-users/zsh-autosuggestions
 zplugin load zdharma/history-search-multi-word
-
-#zplugin cdclear -q # <- forget completions provided up to this moment
 
 # Load theme
 zplugin load yardnsm/blox-zsh-theme
@@ -44,3 +48,6 @@ set SCRIPTS $IDE_WORKSPACE/dev-backend/scripts
 set PATH $SCRIPTS/local $PATH
 set PATH $SCRIPTS/docker $PATH
 set PATH $SCRIPTS/ocp $PATH
+
+## Alias
+alias cat="bat"
