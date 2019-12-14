@@ -36,6 +36,7 @@ brew cask install forklift
 brew cask install moneymoney
 brew cask install popclip
 brew cask install bartender
+brew cask install dropbox
 brew cask install visual-studio-code
 brew cask install firefox
 brew cask install docker
@@ -44,6 +45,13 @@ brew cask install java
 brew cask install fork
 brew cask install hazel
 brew cask install atext
+brew cask install divvy
 brew cask install virtualbox
 brew cask install notion
+brew cask install electrum
+brew cask install macpass
+brew cask install postman
+brew cask install rocket-chat
+brew cask install slack
 brew cask install telegram
+brew cask install todoist
