@@ -52,4 +52,5 @@ brew cask install postman
 brew cask install rocket-chat
 brew cask install slack
 brew cask install telegram
+brew cask install intellij-idea
 brew cask install todoist
