@@ -10,24 +10,27 @@ brew upgrade
 
 # Commandline tools
 brew install nano
-brew install vim --override-system-vi
+brew install vim
 brew install httpie
 brew install git
 brew install grep
 brew install openssh
 brew install fish
 brew install bat
-brew tap fisherman/tap
-brew install fisherman
-brew tap buo/cask-upgrade
+brew install fd
+brew install fzf
 
 # Java
 brew tap AdoptOpenJDK/openjdk
 brew cask install adoptopenjdk8
 brew cask install adoptopenjdk11
 
+# Development
+brew install cntlm
+brew install coreutils
+brew install maven
+
 # Apps
-brew cask install etcher
 brew cask install spotify
 brew cask install alfred
 brew cask install caffeine
@@ -36,14 +39,22 @@ brew cask install forklift
 brew cask install moneymoney
 brew cask install popclip
 brew cask install bartender
+brew cask install dropbox
 brew cask install visual-studio-code
 brew cask install firefox
 brew cask install docker
 brew cask install resilio-sync
-brew cask install java
 brew cask install fork
 brew cask install hazel
 brew cask install atext
+brew cask install divvy
 brew cask install virtualbox
 brew cask install notion
+brew cask install electrum
+brew cask install macpass
+brew cask install postman
+brew cask install rocket-chat
+brew cask install slack
 brew cask install telegram
+brew cask install intellij-idea
+brew cask install todoist

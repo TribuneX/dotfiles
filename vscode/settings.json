@@ -4,7 +4,6 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
     "editor.formatOnPaste": true,
-    "workbench.colorTheme": "Atom One Dark",
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 3000,
     "workbench.iconTheme": "file-icons",
@@ -24,7 +23,34 @@
     "yaml.customTags": [
         "!secret",
         "!include_dir_merge_list",
-        "!include_dir_named"
+        "!include_dir_named",
+        "!And",
+        "!And sequence",
+        "!If",
+        "!If sequence",
+        "!Not",
+        "!Not sequence",
+        "!Equals",
+        "!Equals sequence",
+        "!Or",
+        "!Or sequence",
+        "!FindInMap",
+        "!FindInMap sequence",
+        "!Base64",
+        "!Join",
+        "!Join sequence",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!Sub sequence",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!ImportValue sequence",
+        "!Select",
+        "!Select sequence",
+        "!Split",
+        "!Split sequence"
     ],
     "window.zoomLevel": 0,
     "gitlens.advanced.messages": {
@@ -37,10 +63,15 @@
         "unsinnigkeiten"
     ],
     "vs-kubernetes": {
-        "vs-kubernetes.minikube-path": "/Users/sbleidner/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+        "vs-kubernetes.minikube-path": "/Users/sbleidner/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+        "vs-kubernetes.helm-path": "/Users/sbleidner/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+        "vs-kubernetes.draft-path": "/Users/sbleidner/.vs-kubernetes/tools/draft/darwin-amd64/draft"
     },
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "vscode-home-assistant.hostUrl": "https://hass.cbs-service.net:8123",
-    "vscode-home-assistant.longLivedAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI0ZjI1NmIzMTdlODI0NGY4YThkZDk3OTcwMjQ2MGRlNiIsImlhdCI6MTU1MzQ2MjU1OCwiZXhwIjoxODY4ODIyNTU4fQ.YXV_dOI19wbtIeMdE6QHpOKyE8g3-MydFqkuyLx9dYA"
+    "vscode-home-assistant.longLivedAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI0ZjI1NmIzMTdlODI0NGY4YThkZDk3OTcwMjQ2MGRlNiIsImlhdCI6MTU1MzQ2MjU1OCwiZXhwIjoxODY4ODIyNTU4fQ.YXV_dOI19wbtIeMdE6QHpOKyE8g3-MydFqkuyLx9dYA",
+    "workbench.sideBar.location": "right",
+    "workbench.colorTheme": "Atom One Dark",
+    "yaml.validate": false
 }
