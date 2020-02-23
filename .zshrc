@@ -22,38 +22,41 @@ setopt hist_expire_dups_first
 setopt hist_ignore_space
 setopt hist_verify
 
-# Use zplugin
-source ~/.zplugin/bin/zplugin.zsh
+# Use zinit
+source ~/.zinit/bin/zinit.zsh
 
 # Load OMZ Git library
-zplugin ice wait lucid
-zplugin snippet OMZ::lib/git.zsh
+zinit ice wait lucid
+zinit snippet OMZ::lib/git.zsh
 
 # Load Git plugin from OMZ
-zplugin ice wait atload"unalias grv" lucid
-zplugin snippet OMZ::plugins/git/git.plugin.zsh
-zplugin snippet OMZ::plugins/fzf/fzf.plugin.zsh
-zplugin load zsh-users/zsh-autosuggestions
-zplugin load zdharma/history-search-multi-word
+zinit ice wait atload"unalias grv" lucid
+zinit snippet OMZ::plugins/git/git.plugin.zsh
+zinit snippet OMZ::plugins/fzf/fzf.plugin.zsh
+zinit load zsh-users/zsh-autosuggestions
+zinit load zdharma/history-search-multi-word
 
 # omz libs
-zplugin snippet OMZ::lib/directories.zsh
-zplugin snippet OMZ::lib/functions.zsh
-zplugin snippet OMZ::lib/git.zsh
-zplugin snippet OMZ::lib/grep.zsh
+zinit snippet OMZ::lib/directories.zsh
+zinit snippet OMZ::lib/functions.zsh
+zinit snippet OMZ::lib/git.zsh
+zinit snippet OMZ::lib/grep.zsh
 
 # enhancd
-zplugin light b4b4r07/enhancd
+zinit light b4b4r07/enhancd
 
 # Load theme
-zplugin load yardnsm/blox-zsh-theme
+zinit load yardnsm/blox-zsh-theme
 
 # Syntax highlighting plugin. Must be last.
-zplugin ice wait"0z" silent atinit"zpcompinit;zpcdreplay"
-zplugin light zdharma/fast-syntax-highlighting
+zinit ice wait"0z" silent atinit"zpcompinit;zpcdreplay"
+zinit light zdharma/fast-syntax-highlighting
+
+alias upgrade="bash ~/dotfiles/scripts/brew-upgrade.sh"
 
 # DB
 alias proxy="bash ~/dotfiles/scripts/startProxy.sh"
+alias db="bash ~/dotfiles/scripts/db.sh"
 
 export IDE_WORKSPACE="/Users/sbleidner/IdeaProjects/itemis/db_systel/sab_workspace"
 export SCRIPTS="$IDE_WORKSPACE/dev-backend/scripts"
@@ -64,6 +67,11 @@ export PATH="/usr/local/opt/libpq/bin:$PATH"
 
 ## Alias
 alias cat="bat"
+alias ls="exa"
+
+## Go Tooling
+export GOPATH="$HOME/go"
+PATH="$GOPATH/bin:$PATH"
 
 
 startfor(){
