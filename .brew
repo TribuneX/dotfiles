@@ -19,6 +19,7 @@ brew install fish
 brew install bat
 brew install fd
 brew install fzf
+brew install exa
 
 # Java
 brew tap AdoptOpenJDK/openjdk
@@ -40,7 +41,8 @@ brew cask install moneymoney
 brew cask install popclip
 brew cask install bartender
 brew cask install dropbox
-brew cask install visual-studio-code
+brew cask install vscodium
+brew cask isntall chromium
 brew cask install firefox
 brew cask install docker
 brew cask install resilio-sync
@@ -57,4 +59,3 @@ brew cask install rocket-chat
 brew cask install slack
 brew cask install telegram
 brew cask install intellij-idea
-brew cask install todoist
