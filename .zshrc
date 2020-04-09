@@ -46,7 +46,9 @@ zinit snippet OMZ::lib/grep.zsh
 zinit light b4b4r07/enhancd
 
 # Load theme
-zinit load yardnsm/blox-zsh-theme
+zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
+zinit light sindresorhus/pure
+zstyle :prompt:pure:git:stash show yes
 
 # Syntax highlighting plugin. Must be last.
 zinit ice wait"0z" silent atinit"zpcompinit;zpcdreplay"
@@ -68,11 +70,6 @@ export PATH="/usr/local/opt/libpq/bin:$PATH"
 ## Alias
 alias cat="bat"
 alias ls="exa"
-
-## Go Tooling
-export GOPATH="$HOME/go"
-PATH="$GOPATH/bin:$PATH"
-
 
 startfor(){
         servicename=$1
