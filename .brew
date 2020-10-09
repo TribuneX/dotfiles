@@ -15,7 +15,6 @@ brew install httpie
 brew install git
 brew install grep
 brew install openssh
-brew install fish
 brew install bat
 brew install fd
 brew install fzf
@@ -27,7 +26,6 @@ brew cask install adoptopenjdk8
 brew cask install adoptopenjdk11
 
 # Development
-brew install cntlm
 brew install coreutils
 brew install maven
 
@@ -49,7 +47,7 @@ brew cask install resilio-sync
 brew cask install fork
 brew cask install hazel
 brew cask install atext
-brew cask install divvy
+#brew cask install divvy
 brew cask install virtualbox
 brew cask install notion
 brew cask install electrum
@@ -59,3 +57,5 @@ brew cask install rocket-chat
 brew cask install slack
 brew cask install telegram
 brew cask install intellij-idea
+brew cask install rectangle
+brew cask install home-assistant
