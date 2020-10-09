@@ -56,9 +56,13 @@ zinit light zdharma/fast-syntax-highlighting
 
 alias upgrade="bash ~/dotfiles/scripts/brew-upgrade.sh"
 
+# Git aliases
+alias gitclean="git branch --merged | grep -v master | xargs git branch -d"
+
 # DB
 alias proxy="bash ~/dotfiles/scripts/startProxy.sh"
 alias db="bash ~/dotfiles/scripts/db.sh"
+alias dns="bash ~/dotfiles/scripts/startDNS.sh"
 
 export IDE_WORKSPACE="/Users/sbleidner/IdeaProjects/itemis/db_systel/sab_workspace"
 export SCRIPTS="$IDE_WORKSPACE/dev-backend/scripts"
@@ -67,23 +71,15 @@ export PATH="$SCRIPTS/docker:$PATH"
 export PATH="$SCRIPTS/ocp:$PATH"
 export PATH="/usr/local/opt/libpq/bin:$PATH"
 
-## Alias
+# Alias
 alias cat="bat"
 alias ls="exa"
 
-startfor(){
-        servicename=$1
-        $SCRIPTS/docker/start-for-${servicename}-service.sh
-}
-
-stopfor(){
-        servicename=$1
-        $SCRIPTS/docker/stop-for-${servicename}-service.sh
-}
-
-testfor(){
-        servicename=$1
-        $SCRIPTS/local/it-${servicename}.sh
-}
+# switch Java versions
+jdk() {
+        version=$1
+        export JAVA_HOME=$(/usr/libexec/java_home -v"$version");
+        java -version
+ }
 
 
