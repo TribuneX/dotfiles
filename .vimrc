@@ -21,3 +21,5 @@ set ruler
 
 " Show the filename in the window titlebar
 set title
+
+set guifont=Monaco:h18
