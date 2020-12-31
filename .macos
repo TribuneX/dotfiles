@@ -73,6 +73,8 @@ defaults write com.apple.screencapture disable-shadow -bool true
 # the files through Finder. Makes things look pretty.
 defaults write com.apple.finder CreateDesktop -bool false && killall Finder
 
+# Disable font smoothing (see: https://tonsky.me/blog/monitors/)
+defaults -currentHost write -g AppleFontSmoothing -int 0
 
 ###############################################################################
 # Finder                                                                      #
