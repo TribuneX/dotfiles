@@ -13,5 +13,8 @@ echo "Install all our dependencies with bundle (See Brewfile)"
 brew tap homebrew/bundle
 brew bundle install
 
+
+antibody bundle < ~/dotfiles/zsh/.plugins.txt > ~/dotfiles/zsh/.plugins.sh
+
 source link_files.sh
 source .macos
