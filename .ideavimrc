@@ -1,0 +1,8 @@
+" Disable arrow keys in normal mode
+noremap <UP> <NOP>
+noremap <DOWN> <NOP>
+noremap <LEFT> <NOP>
+noremap <RIGHT> <NOP>
+
+" Use system-wide clipboard
+set clipboard=unnamed
