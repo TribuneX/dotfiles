@@ -3,6 +3,7 @@ syntax on
 
 " Enable line numbers.
 set number
+set relativenumber
 
 " Always show tab bar.
 set showtabline=2
@@ -30,5 +31,5 @@ noremap <DOWN> <NOP>
 noremap <LEFT> <NOP>
 noremap <RIGHT> <NOP>
 
-" Use system-wide clipboard
-set clipboard=unnamed
+" Highlight search fields
+set hls
