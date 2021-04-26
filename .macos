@@ -14,6 +14,18 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 defaults write NSGlobalDomain KeyRepeat -int 2
 defaults write NSGlobalDomain InitialKeyRepeat -int 12
 
+# Shortcuts
+
+defaults write -g NSUserKeyEquivalents '{
+    "Show Next Tab" = "@~k";
+    "Show Previous Tab" = "@~j";
+}'
+
+defaults write -app MoneyMoney NSUserKeyEquivalents '{
+    "Export Transactions..." = "@e";
+    "Edit Transaction..." = "@$e";
+}'
+
 ###############################################################################
 # Apple software: Safari, Updater, iTunes, etc.                               #
 ###############################################################################
