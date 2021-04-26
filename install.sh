@@ -16,5 +16,7 @@ brew bundle install
 
 antibody bundle < ~/dotfiles/zsh/.plugins.txt > ~/dotfiles/zsh/.plugins.sh
 
+source repos.sh
+
 source link_files.sh
 source .macos
