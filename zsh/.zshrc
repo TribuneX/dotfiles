@@ -6,3 +6,5 @@ source ~/dotfiles/zsh/functions.zsh
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+eval "$(~/homebrew/bin/brew shellenv)"
