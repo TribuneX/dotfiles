@@ -53,6 +53,7 @@ cask "thingsmacsandboxhelper"
 cask "tunnelblick"
 cask "vscodium"
 cask "wireshark"
+cask "moom"
 mas "1Blocker", id: 1365531024
 mas "Affinity Designer", id: 824171161
 mas "Apple Configurator", id: 1037126344
