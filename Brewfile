@@ -5,6 +5,8 @@ tap "homebrew/core"
 tap "homebrew/services"
 brew "antibody"
 brew "bat"
+brew "bitwarden-cli"
+brew "black"
 brew "certbot"
 brew "coreutils"
 brew "exa"
@@ -14,20 +16,23 @@ brew "git"
 brew "grep"
 brew "hugo"
 brew "iperf"
-brew "python@3.9"
 brew "ldns"
 brew "libfido2"
 brew "mackup"
 brew "mas"
 brew "nano"
-brew "neovim"
 brew "nmap"
 brew "openssh"
+brew "podman"
+brew "pre-commit"
+brew "python@3.9"
 brew "restic"
 brew "ruby"
+cask "1password7"
 cask "alfred"
 cask "atext"
 cask "bartender"
+cask "battery"
 cask "caffeine"
 cask "docker"
 cask "electrum"
@@ -37,31 +42,39 @@ cask "forklift"
 cask "hazel"
 cask "home-assistant"
 cask "intellij-idea"
+cask "jetbrains-space"
 cask "jitsi-meet"
 cask "karabiner-elements"
 cask "macdown"
 cask "mactex"
 cask "maestral"
 cask "moneymoney"
+cask "moom"
 cask "notion"
+cask "raycast"
 cask "resilio-sync"
 cask "rocket"
+cask "rocket-typist"
 cask "signal"
 cask "slack"
 cask "spotify"
 cask "thingsmacsandboxhelper"
 cask "tunnelblick"
 cask "vscodium"
+cask "whatsapp-beta"
 cask "wireshark"
-cask "moom"
 mas "1Blocker", id: 1365531024
 mas "Affinity Designer", id: 824171161
 mas "Apple Configurator", id: 1037126344
+mas "AusweisApp2", id: 948660805
 mas "Bitwarden", id: 1352778147
 mas "Divvy", id: 413857545
+mas "DuckTabs-Extension", id: 1508584686
+mas "Exporter", id: 1099120373
 mas "Fantastical", id: 975937182
 mas "GarageBand", id: 682658836
 mas "GoodNotes", id: 1444383602
+mas "Horo", id: 1437226581
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "LanScan", id: 472226235
@@ -74,6 +87,7 @@ mas "Pages", id: 409201541
 mas "Parcel", id: 639968404
 mas "PDFScanner", id: 410968114
 mas "Reeder", id: 1529448980
+mas "Spaces", id: 1509611686
 mas "The Unarchiver", id: 425424353
 mas "Things", id: 904280696
 mas "Tweetbot", id: 557168941
