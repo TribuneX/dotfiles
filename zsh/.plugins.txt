@@ -8,4 +8,4 @@ ohmyzsh/ohmyzsh path:plugins/docker
 
 # theme
 mafredri/zsh-async
-sindresorhus/pure
+dfurnes/purer
