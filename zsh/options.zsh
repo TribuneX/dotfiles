@@ -1,5 +1,5 @@
 # Completions
-autoload -Uz compinit; $_
+autoload -Uz compinit && compinit
 
 # Matches are case insensitive
 zstyle ':completion:*' matcher-list 'm:{A-Za-z}={a-zA-Z}'

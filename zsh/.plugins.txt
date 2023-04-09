@@ -6,6 +6,8 @@ zsh-users/zsh-syntax-highlighting
 ohmyzsh/ohmyzsh path:plugins/kubectl
 ohmyzsh/ohmyzsh path:plugins/docker
 
+b4b4r07/enhancd
+
 # theme
 mafredri/zsh-async
 dfurnes/purer
