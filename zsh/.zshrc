@@ -1,4 +1,6 @@
 source /Users/sbleidner/homebrew/opt/antidote/share/antidote/antidote.zsh
+# required for sourcing enhancd
+autoload -Uz compinit && compinit
 source ~/dotfiles/zsh/.plugins.sh
 
 source ~/dotfiles/zsh/options.zsh
