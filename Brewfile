@@ -1,7 +1,3 @@
-tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
-tap "homebrew/services"
 brew "openssl@3"
 brew "python@3.13"
 brew "awscli"
